@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page Demo</title>
+    <link rel="stylesheet" href="style/styles.css"/>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">SHOP</a>
+            <nav>
+                <!-- Simplified nav for demo -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Product Section -->
+        <div class="product-container">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://placehold.co/600x600" alt="Premium Cotton T-Shirt" id="main-product-image">
+                </div>
+                <div class="thumbnails">
+                    <div class="thumbnail active" data-image="https://placehold.co/600x600">
+                        <img src="https://placehold.co/100x100?text=Front" alt="T-Shirt Front">
+                    </div>
+                    <div class="thumbnail" data-image="https://placehold.co/600x600?text=Back">
+                        <img src="https://placehold.co/100x100?text=Back" alt="T-Shirt Back">
+                    </div>
+                    <div class="thumbnail" data-image="https://placehold.co/600x600?text=Side">
+                        <img src="https://placehold.co/100x100?text=Side" alt="T-Shirt Side">
+                    </div>
+                    <div class="thumbnail" data-image="https://placehold.co/600x600?text=Detail">
+                        <img src="https://placehold.co/100x100?text=Detail" alt="T-Shirt Detail">
+                    </div>
+                    <div class="thumbnail" data-image="https://placehold.co/600x600?text=Fabric">
+                        <img src="https://placehold.co/100x100?text=Fabric" alt="T-Shirt Fabric">
+                    </div>
+                    <div class="thumbnail" data-image="https://placehold.co/600x600?text=Closeup">
+                        <img src="https://placehold.co/100x100?text=Closeup" alt="T-Shirt Closeup">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info">
+                <h1>Premium Cotton T-Shirt</h1>
+                <div class="product-price">$29.99</div>
+                
+                <!-- Product Variants -->
+                <div class="product-variants">
+                    <!-- Color Options -->
+                    <label class="variant-label">Color: <span id="selected-color">Navy Blue</span></label>
+                    <div class="color-options">
+                        <div class="color-swatch active" style="background-color: #1a2a57;" data-color="Navy Blue"></div>
+                        <div class="color-swatch" style="background-color: #000000;" data-color="Black"></div>
+                        <div class="color-swatch" style="background-color: #FFFFFF; border: 1px solid #ddd;" data-color="White"></div>
+                        <div class="color-swatch" style="background-color: #7D8471;" data-color="Olive"></div>
+                        <div class="color-swatch" style="background-color: #D22730;" data-color="Red"></div>
+                    </div>
+                    
+                    <!-- Compare Colors Button -->
+                    <div class="compare-colors-btn">Compare Colors</div>
+                    
+                    <!-- Size Options -->
+                    <label class="variant-label">Size: <span id="selected-size">Medium</span></label>
+                    <div class="size-options">
+                        <div class="size-option" data-size="XS">XS</div>
+                        <div class="size-option" data-size="S">S</div>
+                        <div class="size-option active" data-size="M">M</div>
+                        <div class="size-option" data-size="L">L</div>
+                        <div class="size-option" data-size="XL">XL</div>
+                        <div class="size-option" data-size="XXL">XXL</div>
+                    </div>
+                    
+                    <!-- Size Chart Button -->
+                    <span class="size-chart-btn">Size Chart</span>
+                </div>
+                
+                <!-- Add to Cart Button -->
+                <button class="add-to-cart">Add to Cart</button>
+                
+                <!-- Product Tabs -->
+                <div class="product-tabs">
+                    <div class="tabs-nav">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="product-info">Product Information</button>
+                        <button class="tab-btn" data-tab="shipping">Shipping Details</button>
+                    </div>
+                    
+                    <div id="description" class="tab-content active">
+                        <p>Our Premium Cotton T-Shirt is crafted from 100% cotton for maximum comfort and durability. Perfect for everyday wear, this classic tee features a relaxed fit and comes in a variety of colors to match your style.</p>
+                        
+                    </div>
+                    
+                    <div id="product-info" class="tab-content">
+                        <ul>
+                            <li>100% Cotton</li>
+                            <li>Regular fit</li>
+                            <li>Crew neck</li>
+                            <li>Short sleeves</li>
+                            <li>Machine washable</li>
+                            <li>Imported</li>
+                        </ul>
+                    </div>
+                    
+                    <div id="shipping" class="tab-content">
+                        <p>Standard Shipping (3-5 business days): $5.99</p>
+                        <p>Express Shipping (1-2 business days): $12.99</p>
+                        <p>Free standard shipping on orders over $50</p>
+                        <p>International shipping available to select countries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bundle Suggestion -->
+        <div class="bundle-suggestion">
+            <h3 class="bundle-title">Complete the Look</h3>
+            <div class="bundle-products">
+                <div class="bundle-product">
+                    <img src="https://placehold.co/200x200" alt="Premium Cotton T-Shirt">
+                    <h4>Premium Cotton T-Shirt</h4>
+                    <p>$29.99</p>
+                </div>
+                <div class="bundle-product">
+                    <img src="https://placehold.co/200x200?text=Jeans" alt="Slim Fit Jeans">
+                    <h4>Slim Fit Jeans</h4>
+                    <p>$59.99</p>
+                </div>
+                <div class="bundle-product">
+                    <img src="https://placehold.co/200x200?text=Watch" alt="Minimalist Watch">
+                    <h4>Minimalist Watch</h4>
+                    <p>$89.99</p>
+                </div>
+            </div>
+            <div class="bundle-price">
+                <p>Individual Total: $179.97</p>
+                <p class="bundle-total">Bundle Price: $159.99 (Save $19.98)</p>
+            </div>
+            <button class="add-bundle">Add Bundle to Cart</button>
+        </div>
+
+        <!-- Pair Well With Section -->
+        <div class="pairs-well">
+            <h2 class="section-title">Pairs Well With</h2>
+            <div class="complementary-products">
+                <div class="product-card">
+                    <img src="https://placehold.co/300x300?text=Jacket" alt="Denim Jacket">
+                    <div class="product-card-content">
+                        <h3 class="product-card-title">Denim Jacket</h3>
+                        <p class="product-card-price">$79.99</p>
+                        <button class="product-card-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x300?text=Sneakers" alt="Canvas Sneakers">
+                    <div class="product-card-content">
+                        <h3 class="product-card-title">Canvas Sneakers</h3>
+                        <p class="product-card-price">$49.99</p>
+                        <button class="product-card-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x300?text=Cap" alt="Baseball Cap">
+                    <div class="product-card-content">
+                        <h3 class="product-card-title">Baseball Cap</h3>
+                        <p class="product-card-price">$24.99</p>
+                        <button class="product-card-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x300?text=Sunglasses" alt="Polarized Sunglasses">
+                    <div class="product-card-content">
+                        <h3 class="product-card-title">Polarized Sunglasses</h3>
+                        <p class="product-card-price">$39.99</p>
+                        <button class="product-card-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x300?text=Belt" alt="Leather Belt">
+                    <div class="product-card-content">
+                        <h3 class="product-card-title">Leather Belt</h3>
+                        <p class="product-card-price">$34.99</p>
+                        <button class="product-card-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products">
+            <h2 class="section-title">You May Also Like</h2>
+            <div class="related-grid">
+                <div class="product-card">
+                    <img src="https://placehold.co/300x300?text=Polo" alt="Polo Shirt">
+                    <div class="product-badge">New</div>
+                    <div class="product-card-content">
+                        <h3 class="product-card-title">Classic Polo Shirt</h3>
+                        <p class="product-card-price">$34.99</p>
+                        <button class="product-card-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x300?text=Henley" alt="Henley Shirt">
+                    <div class="product-card-content">
+                        <h3 class="product-card-title">Henley Long Sleeve</h3>
+                        <p class="product-card-price">$39.99</p>
+                        <button class="product-card-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x300?text=V-Neck" alt="V-Neck T-Shirt">
+                    <div class="product-badge">Popular</div>
+                    <div class="product-card-content">
+                        <h3 class="product-card-title">V-Neck T-Shirt</h3>
+                        <p class="product-card-price">$29.99</p>
+                        <button class="product-card-button">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="https://placehold.co/300x300?text=Tank" alt="Tank Top">
+                    <div class="product-card-content">
+                        <h3 class="product-card-title">Premium Tank Top</h3>
+                        <p class="product-card-price">$24.99</p>
+                        <button class="product-card-button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Size Chart Modal -->
+    <div class="modal-overlay" id="size-chart-modal">
+        <div class="modal">
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-title">Size Chart</h3>
+            <p>Find your perfect fit with our detailed size chart.</p>
+            <table class="size-chart-table">
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Chest (inches)</th>
+                        <th>Waist (inches)</th>
+                        <th>Length (inches)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>XS</td>
+                        <td>34-36</td>
+                        <td>28-30</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>S</td>
+                        <td>36-38</td>
+                        <td>30-32</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>38-40</td>
+                        <td>32-34</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>40-42</td>
+                        <td>34-36</td>
+                        <td>29</td>
+                    </tr>
+                    <tr>
+                        <td>XL</td>
+                        <td>42-44</td>
+                        <td>36-38</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>XXL</td>
+                        <td>44-46</td>
+                        <td>38-40</td>
+                        <td>31</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Compare Colors Modal -->
+    <div class="modal-overlay" id="compare-colors-modal">
+        <div class="modal">
+            <span class="modal-close">&times;</span>
+            <h3 class="modal-title">Compare Colors</h3>
+            <p>Select colors to compare (click to select/deselect)</p>
+            <div class="compare-colors-grid">
+                <div class="compare-color-item" data-color="Navy Blue">
+                    <div class="compare-color-swatch" style="background-color: #1a2a57;"></div>
+                    <p>Navy Blue</p>
+                </div>
+                <div class="compare-color-item" data-color="Black">
+                    <div class="compare-color-swatch" style="background-color: #000000;"></div>
+                    <p>Black</p>
+                </div>
+                <div class="compare-color-item" data-color="White">
+                    <div class="compare-color-swatch" style="background-color: #FFFFFF; border: 1px solid #ddd;"></div>
+                    <p>White</p>
+                </div>
+                <div class="compare-color-item" data-color="Olive">
+                    <div class="compare-color-swatch" style="background-color: #7D8471;"></div>
+                    <p>Olive</p>
+                </div>
+                <div class="compare-color-item" data-color="Red">
+                    <div class="compare-color-swatch" style="background-color: #D22730;"></div>
+                    <p>Red</p>
+                </div>
+                <div class="compare-color-item" data-color="Gray">
+                    <div class="compare-color-swatch" style="background-color: #808080;"></div>
+                    <p>Gray</p>
+                </div>
+                <div class="compare-color-item" data-color="Blue">
+                    <div class="compare-color-swatch" style="background-color: #0000FF;"></div>
+                    <p>Blue</p>
+                </div>
+                <div class="compare-color-item" data-color="Green">
+                    <div class="compare-color-swatch" style="background-color: #008000;"></div>
+                    <p>Green</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
