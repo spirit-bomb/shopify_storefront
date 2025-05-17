@@ -58,8 +58,8 @@ A fully responsive, cleanly coded product page built using **vanilla HTML, CSS, 
 
 1. **Clone the repository or download the ZIP:**
    ```bash
-   git clone https://github.com/your-username/shopify-product-page.git
-   cd shopify-product-page
+   git clone https://github.com/spirit-bomb/shopify_storefront.git
+   cd shopify_storefront
    ```
 2. **Open index.html in any modern web browser.**
 
